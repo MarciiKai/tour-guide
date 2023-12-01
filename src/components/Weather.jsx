@@ -13,11 +13,11 @@ export default class MainWeatherWindow extends React.Component {
             src={
               this.props.data
                 ? require(`../images/${this.props.data.icon}.svg`)
-                : require('../images/amcharts_weather_icons_1.0.0/static/rainy-4.svg')
+                : require('../images/images/01d.svg')
             }
             alt='sun'
             style={{
-              visibility: this.props.city ? 'visible' : 'true',
+              visibility: this.props.city ? 'visible' : 'hidden',
               opacity: this.props.city ? '1' : '0'
             }}
           />
@@ -25,7 +25,7 @@ export default class MainWeatherWindow extends React.Component {
           <div
             className='today'
             style={{
-              visibility: this.props.city ? 'visible' : 'true',
+              visibility: this.props.city ? 'visible' : 'hidden',
               opacity: this.props.city ? '1' : '0'
             }}
           >
