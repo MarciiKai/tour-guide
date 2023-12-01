@@ -34,7 +34,7 @@ class App extends React.Component {
     });
   };
 
-  makeApiCall = async city => {
+  makeApiCall = async (city) => {
     const api_data = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=dc4e0175ccb31c85e9f5ca91626b5d02
       `
