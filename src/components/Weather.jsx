@@ -13,7 +13,7 @@ export default class MainWeatherWindow extends React.Component {
             src={
               this.props.data
                 ? require(`../images/${this.props.data.icon}.svg`)
-                : require('../images/images/01d.svg')
+                : require('../images/01d.svg')
             }
             alt='sun'
             style={{
