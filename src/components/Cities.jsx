@@ -21,11 +21,11 @@ export default class Cities extends React.Component {
     };
 
     const style = {
-      top: this.props.city ? '-380px' : '-20px',
+      top: this.props.city ? '-550px' : '-20px',
       width: '600px',
       display: 'inline-block',
       padding: '10px 0px 10px 30px',
-      lineHeight: '120%',
+      lineHeight: '10%',
       position: 'relative',
       borderRadius: '20px',
       outline: 'none',

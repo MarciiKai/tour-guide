@@ -82,10 +82,11 @@ class App extends React.Component {
       <div className='App'>
         <header className='App-header'>
           <Weather data={this.state.days[0]} city={this.state.city}>
-          <Cities city={this.state.city} makeApiCall={this.makeApiCall.bind(this)} />
-
             <WeatherBoxes />
           </Weather>
+          <Cities city={this.state.city} makeApiCall={this.makeApiCall.bind(this)} />
+
+
         </header>
       </div>
     );
