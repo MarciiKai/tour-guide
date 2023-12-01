@@ -14,8 +14,8 @@ export default class Weather extends React.Component{
                     <img
                     src ={
                         this.props.data
-                        ? require(`../logo.svg`)
-                        :require(`../logo.svg`)
+                        ? require(`../images/${this.props.icon}.svg`)
+                        :require(`../images/cloudy_moon.svg`)
                     }
 
                     alt="sun"

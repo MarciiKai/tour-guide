@@ -1,7 +1,7 @@
 .loading{
     background-color: azure;
     background-size: 25px 25px;
-    /* background-image: /; */
+    background-image: url("../images/Loading_2.gif");
     background-position: 97% center;
     background-repeat: no-repeat;
 }

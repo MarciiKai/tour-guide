@@ -22,8 +22,8 @@ export default class WeatherBox extends React.Component{
                 <h1>{this.props.date ? this.getDay(this.props.date) : ''}</h1>
                 <img src={
                     this.props.icon
-                    ?require(`../logo.svg`)
-                    :require('../logo.svg')
+                    ?require(`../images/${this.props.icon}.svg`)
+                    :require('../images/sun.svg')
                 }
                 alt="sun">
                 </img>
