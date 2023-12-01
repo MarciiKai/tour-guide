@@ -33,11 +33,11 @@ class App extends React.Component{
   // tries to make an API call with the given city name and triggers state update
   makeApiCall = async city => {
     const api_data = await fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=6557810176c36fac5f0db536711a6c52`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=dc4e0175ccb31c85e9f5ca91626b5d02`
     ).then(resp => resp.json());
 
     if (api_data.cod === '200') {
-      await this.updateState(api_data);
+    await this.updateState(api_data);
       return true;
     } else return false;
   };
@@ -78,10 +78,11 @@ class App extends React.Component{
     return (
       <div className='App'>
         <header className='App-header'>
+        <Cities city={this.state.city} makeApiCall={this.makeApiCall.bind(this)} />
           <Weather data={this.state.days[0]} city={this.state.city}>
-            <Cities city={this.state.city} makeApiCall={this.makeApiCall.bind(this)} />
-            <WeatherBoxes />
           </Weather>
+          <WeatherBoxes />
+
         </header>
       </div>
     );

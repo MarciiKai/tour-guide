@@ -11,7 +11,7 @@ export default class WeatherBox extends React.Component{
         weekday[3] = 'Wednesday';
         weekday[4] = 'Thursday';
         weekday[5] = 'Friday';
-        weekday[6] = 'saturday';
+        weekday[6] = 'Saturday';
 
         return weekday[new Date(date).getDate()];
     };
@@ -23,7 +23,7 @@ export default class WeatherBox extends React.Component{
                 <img src={
                     this.props.icon
                     ?require(`../images/${this.props.icon}.svg`)
-                    :require('../images/sun.svg')
+                    :require('../images/amcharts_weather_icons_1.0.0/static/day.svg')
                 }
                 alt="sun">
                 </img>

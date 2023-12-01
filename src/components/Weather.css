@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #365a7a;
+    background-color: rgba(255, 255, 255, 0.2);
     bottom: 0px 0px 10p silver;
 }
 
@@ -55,7 +55,7 @@
     top: -10px;
     color: #365a7a;
     font-size: 4rem;
-    width: 800px;
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -63,7 +63,7 @@
 
 .title::before{
     content: '';
-    background: url('../images/cloudy-sun.svg') no-repeat;
+    background: url('../images/amcharts_weather_icons_1.0.0/animated/rainy-1.svg') no-repeat;
     background-size: 100%;
     width: 250px;
     height: 250px;
