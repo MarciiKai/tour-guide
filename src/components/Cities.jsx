@@ -12,9 +12,9 @@ export default class Cities extends React.Component {
         if (/^[a-zA-ZäöüÄÖÜß ]+$/.test(city)) {
           e.target.classList.add('loading');
 
-          if (await this.props.makeApiCall(city)) e.target.placeholder = 'Enter a City...';
-          else e.target.placeholder = 'City was not found, try again...';
-        } else e.target.placeholder = 'Please enter a valid city name...';
+          if (await this.props.makeApiCall(city)) e.target.placeholder = 'Please enter a city...';
+          else e.target.placeholder = 'This city was not found, try again...';
+        } else e.target.placeholder = 'No such city...';
         e.target.classList.remove('loading');
         e.target.value = '';
       }
